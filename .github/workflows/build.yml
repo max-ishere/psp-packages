@@ -59,7 +59,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - uses: actions/download-artifact@v2
+    - uses: actions/download-artifact@v4.1.7
     - name: Install packages
       run: |
         cd package
@@ -90,7 +90,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - uses: actions/download-artifact@v2
+    - uses: actions/download-artifact@v4.1.7
     - name: Upload files
       if: contains(github.ref,'refs/heads/master')
       run: |
